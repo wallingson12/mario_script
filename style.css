@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* remove todo scroll */
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #0099FF;
+}
+
+.game_board {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  height: 800px;
+  margin: 20px auto;
+  border: 1px solid black;
+  overflow: hidden;
+
+  /* Fundo azul */
+  background-color: #0078F8;
+
+  /* Morros (hills.png) */
+  background-image: url('assets/sprites/mapa/hill.jpg');
+  background-repeat: repeat-x;       /* repete horizontalmente */
+  background-position: bottom;       /* alinha ao chão */
+  background-size: auto 800px;       /* altura proporcional */
+}
+
+/* Canvas fica absoluto para sobrepor fundo e pipe */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Pipe animado com CSS */
+.pipe {
+  position: absolute;
+  bottom: 50px; /* altura do chão no canvas */
+  width: 80px;
+  height: 90px;
+  background-image: url('assets/sprites/pipe/pipe.png');
+  background-size: cover;
+  right: -80px;
+  animation: pipe-move 5s linear infinite;
+  z-index: 2;
+}
+
+@keyframes pipe-move {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.cloud {
+  position: absolute;
+  top: 100px;
+  left: 100%; /* começa fora da tela à direita */
+  width: 350px;
+  height: 150px;
+  background-image: url('assets/sprites/clouds/clouds.png');
+  background-size: cover;
+  animation: cloud-move 10s linear infinite;
+  z-index: 0;
+}
+
+.cloud:nth-child(1) { animation-delay: 0s; }
+.cloud:nth-child(2) { animation-delay: 3s; }
+.cloud:nth-child(3) { animation-delay: 6s; }
+
+@keyframes cloud-move {
+  from { transform: translateX(0); }          /* ponto inicial: fora da tela */
+  to   { transform: translateX(-2000px); }    /* se move para a esquerda */
+}
