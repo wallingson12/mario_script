@@ -1,6 +1,6 @@
 # 🎮 Mario e Cano com Nuvens
 
-Um jogo estilo Mario desenvolvido com JavaScript vanilla, Canvas HTML5 e arquitetura modular bem organizada.
+Um jogo estilo Mario desenvolvido com JavaScript, Canvas HTML5 e arquitetura modular bem organizada.
    ## 🎬 Demonstração
 ![Demonstração do Jogo](demo.gif)
 [![Play Online](https://img.shields.io/badge/▶%20Jogar%20Online-Vercel-black?style=for-the-badge&logo=vercel)](https://mario-script-8yjo76vsr-wallingsons-projects.vercel.app/)
