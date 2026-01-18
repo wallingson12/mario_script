@@ -1,4 +1,4 @@
-# 🎮 Mario e Cano com Nuvens
+# 🎮 Mario
 
 Um jogo estilo Mario desenvolvido com JavaScript, Canvas HTML5 e arquitetura modular bem organizada.
    ## 🎬 Demonstração
