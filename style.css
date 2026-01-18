@@ -29,14 +29,14 @@ body {
   /* Fundo azul */
   background-color: #0078F8;
 
-  /* Morros (hills.png) */
-  background-image: url('assets/sprites/mapa/hill.jpg');
+  /* Morros */
+  background-image: url('assets/sprites/mapa/morro.jpg');
   background-repeat: repeat-x;       /* repete horizontalmente */
   background-position: bottom;       /* alinha ao chão */
   background-size: auto 800px;       /* altura proporcional */
 }
 
-/* Canvas fica absoluto para sobrepor fundo e pipe */
+/* Canvas fica absoluto para sobrepor fundo e cano */
 canvas {
   position: absolute;
   top: 0;
@@ -44,20 +44,20 @@ canvas {
   z-index: 1;
 }
 
-/* Pipe animado com CSS */
-.pipe {
+/* Cano animado com CSS */
+.cano {
   position: absolute;
   bottom: 50px; /* altura do chão no canvas */
   width: 80px;
   height: 90px;
-  background-image: url('assets/sprites/pipe/pipe.png');
+  background-image: url('assets/sprites/cano/cano.png');
   background-size: cover;
   right: -80px;
-  animation: pipe-move 5s linear infinite;
+  animation: cano-move 5s linear infinite;
   z-index: 2;
 }
 
-@keyframes pipe-move {
+@keyframes cano-move {
   from {
     right: -80px;
   }

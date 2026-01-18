@@ -1,4 +1,4 @@
-import Sprites, {MARIO_GAME_OVER, MARIO_PARADO, MARIO_RIGHT, MARIO_RIGHT_2, MARIO_LEFT, MARIO_LEFT_2, COIN, BLOCO, CHAO, HILL, CLOUDS, PIPE} from './sprites.js';
+import Sprites, {MARIO_GAME_OVER, MARIO_PARADO, MARIO_RIGHT, MARIO_RIGHT_2, MARIO_LEFT, MARIO_LEFT_2, COIN, BLOCO, CHAO, MORRO, CLOUDS, CANO} from './sprites.js';
 import Jogo from './jogo.js';
 
 const canvas = document.getElementById('tela');
@@ -15,9 +15,9 @@ const imagens = [
   COIN,
   BLOCO,
   CHAO,
-  HILL,
+  MORRO,
   CLOUDS,
-  PIPE
+  CANO
 ];
 
 imagens.forEach(src => spriteManager.carregarImagem(src));

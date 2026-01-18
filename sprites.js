@@ -1,4 +1,3 @@
-// 🔹 Constantes dos sprites
 export const MARIO_PARADO = 'assets/sprites/mario/parado.png';
 export const MARIO_RIGHT = 'assets/sprites/mario/right.png';
 export const MARIO_RIGHT_2 = 'assets/sprites/mario/right_2.png';
@@ -8,9 +7,9 @@ export const MARIO_GAME_OVER = 'assets/sprites/mario/game_over.png';
 export const COIN = 'assets/sprites/coin/coin.png';
 export const BLOCO = 'assets/sprites/blocos/bloco.png';
 export const CHAO = 'assets/sprites/mapa/chao.png';
-export const HILL = 'assets/sprites/mapa/hill.jpg';
+export const MORRO = 'assets/sprites/mapa/morro.jpg';
 export const CLOUDS = 'assets/sprites/clouds/clouds.png';
-export const PIPE = 'assets/sprites/pipe/pipe.png';
+export const CANO = 'assets/sprites/cano/cano.png';
 
 export default class Sprites {
   constructor() {
