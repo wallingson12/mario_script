@@ -3,6 +3,7 @@
 Um jogo estilo Mario desenvolvido com JavaScript vanilla, Canvas HTML5 e arquitetura modular bem organizada.
    ## 🎬 Demonstração
 ![Demonstração do Jogo](demo.gif)
+[![Play Online](https://img.shields.io/badge/▶%20Jogar%20Online-Vercel-black?style=for-the-badge&logo=vercel)](https://mario-script-8yjo76vsr-wallingsons-projects.vercel.app/)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
